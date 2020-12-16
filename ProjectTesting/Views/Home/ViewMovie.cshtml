@@ -1,0 +1,18 @@
+﻿@model MovieModel
+
+<h3>@Model.Title Information</h3>
+
+<table class="table">
+    <tr>
+        <th>Title</th>
+        <th>Year</th>
+        <th>Poster</th>
+    </tr>
+
+    <tr>
+        <td>@Model.Title</td>
+        <td>@Model.Year</td>
+        <td><div><img src="@Model.Poster" /></div></td>
+    </tr>
+
+</table>

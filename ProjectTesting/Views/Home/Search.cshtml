@@ -1,0 +1,27 @@
+﻿@model List<MovieModel>
+
+<h2 class="search-results-heading">Search Results</h2>
+
+@if(Model == null)
+{
+    <p>We found no movies associated with @ViewData["userInput"]. We apologize for you being stupid. </p>
+}
+else
+{
+    <table class="table">
+        <tr>
+            <th>Title</th>
+            <th>Year</th>
+            <th>Poster</th>
+        </tr>
+
+        @foreach (var movie in Model)
+        {
+            <tr>
+                <td class="title">@Html.ActionLink(@movie.Title, "ViewMovie", new { movieTitle = @movie.Title, imdbID = @movie.imdbID })</td>
+                <td>@movie.Year</td>
+                <td><img src="@movie.Poster" alt="@movie.Title"></td>
+            </tr>
+    }
+    </table>
+}

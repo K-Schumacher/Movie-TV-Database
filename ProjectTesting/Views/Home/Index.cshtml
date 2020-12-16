@@ -1,0 +1,723 @@
+﻿@{ ViewData["Title"] = "Movie Search"; }
+
+
+@model MovieModel
+
+@using (Html.BeginForm("Search", "Home", FormMethod.Get))
+{
+
+}
+<section id="boxOfficeList">
+    <h3 class="carousel-heading">Top 20 Box Office Hits of 2020</h3>
+    <!--Carousel Wrapper-->
+    <div id="BoxOfficeTop20" class="carousel slide carousel-multi-item" data-ride="carousel('hover')">
+
+        <!--Controls-->
+        <a class="carousel-control-prev" href="#BoxOfficeTop20" role="button" data-slide="prev" style="left: -95px;">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#BoxOfficeTop20" role="button" data-slide="next" style="right: -95px;">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+        <!--/.Controls-->
+        <!--Slides-->
+        <div class="carousel-parent">
+            <div class="carousel-inner" role="listbox">
+
+                <!--First slide-->
+                <div class="carousel-item active">
+
+                    <div class="col-lg-3 col-md-6 col-sm-6" style="float:left">
+                        <div class="card mb-2 top-20-card">
+                            <img class="card-img-top"
+                                 src="/css/Images/BadBoysForLife.jpg" alt="Bad Boys For Life">
+                            <div class="card-body d-flex flex-column">
+                                <h4 class="card-title">1. Bad Boys For Life</h4>
+                                <p class="card-text">
+                                    Miami detectives Mike Lowrey and Marcus Burnett must face off against
+                                    a mother-and-son pair of drug lords who wreak vengeful havoc on their city.
+                                </p>
+                                <a class="btn btn-primary btn-block mt-auto" href="https://www.imdb.com/video/vi813612825?ref_=tt_pv_vi_aiv_1">Watch Trailer</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-6" style="float:left">
+                        <div class="card mb-2 top-20-card">
+                            <img class="card-img-top"
+                                 src="/css/Images/1917.jpg" alt="1917 Poster">
+                            <div class="card-body d-flex flex-column">
+                                <h4 class="card-title">2. 1917</h4>
+                                <p class="card-text">
+                                    April 6th, 1917. As a regiment assembles to wage war deep in enemy territory, two soldiers are assigned
+                                    to race against time and deliver a message that will stop 1,600 men from walking straight into a deadly trap.
+                                </p>
+                                <a class="btn btn-primary trailerBtn btn-block mt-auto " href="https://www.imdb.com/video/vi4095655705?ref_=tt_pv_vi_aiv_1">Watch Trailer</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-6" style="float:left">
+                        <div class="card mb-2 top-20-card">
+                            <img class="card-img-top"
+                                 src="/css/Images//Sonic.jpg" alt="Sonic the Hedgehog Poster">
+                            <div class="card-body d-flex flex-column">
+                                <h4 class="card-title">3. Sonic the Hedgehog</h4>
+                                <p class="card-text">
+                                    After discovering a small, blue, fast hedgehog, a small-town police officer must help him defeat
+                                    an evil genius who wants to do experiments on him.
+                                </p>
+                                <a class="btn btn-primary trailerBtn btn-block mt-auto" href="https://www.imdb.com/video/vi2279456537?ref_=tt_pv_vi_aiv_3">Watch Trailer</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-6" style="float:left">
+                        <div class="card mb-2 top-20-card">
+                            <img class="card-img-top"
+                                 src="/css/Images//Jumanji.jpg" alt="Jumanji: The Next Level Poster">
+                            <div class="card-body d-flex flex-column">
+                                <h4 class="card-title">4. Jumanji: The Next Level</h4>
+                                <p class="card-text">
+                                    The gang is back but the game has changed. As they return to rescue one of their own, the players will have to
+                                    brave parts unknown from arid deserts to snowy mountains, to escape the world's most dangerous game.
+                                </p>
+                                <a class="btn btn-primary trailerBtn btn-block mt-auto" href="https://www.imdb.com/video/vi1173208857?ref_=tt_pv_vi_aiv_1">Watch Trailer</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!--/.First slide-->
+                <!--Second slide-->
+                <div class="carousel-item">
+
+                    <div class="col-lg-3 col-md-6 col-sm-6" style="float:left">
+                        <div class="card mb-2 top-20-card">
+                            <img class="card-img-top"
+                                 src="/css/Images//StarWars.jpg" alt="Star Wars: Episode IX - The Rise of Skywalker Poster">
+                            <div class="card-body d-flex flex-column">
+                                <h4 class="card-title">5. Star Wars: Episode IX - The Rise of Skywalker</h4>
+                                <p class="card-text">
+                                    The surviving members of the resistance face the First Order once again, and the legendary conflict between the Jedi and the
+                                    Sith reaches its peak bringing the Skywalker saga to its end.
+                                </p>
+                                <a class="btn btn-primary trailerBtn btn-block mt-auto" href="https://www.imdb.com/video/vi518503961?ref_=tt_pv_vi_aiv_1">Watch Trailer</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-6" style="float:left">
+                        <div class="card mb-2 top-20-card">
+                            <img class="card-img-top"
+                                 src="/css/Images//BirdsOfPrey.jpg" alt="Birds Of Prey Poster">
+                            <div class="card-body d-flex flex-column">
+                                <h4 class="card-title">6. Birds of Prey: And the Fantabulous Emancipation of One Harley Quinn</h4>
+                                <p class="card-text">
+                                    After splitting with the Joker, Harley Quinn joins superheroes Black Canary, Huntress and Renee Montoya to
+                                    save a young girl from an evil crime lord.
+                                </p>
+                                <a class="btn btn-primary trailerBtn btn-block mt-auto" href="https://www.imdb.com/video/vi292929305?ref_=tt_pv_vi_aiv_2">Watch Trailer</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-6" style="float:left">
+                        <div class="card mb-2 top-20-card">
+                            <img class="card-img-top"
+                                 src="/css/Images//DoLittle.jpg" alt="Dolittle Poster">
+                            <div class="card-body d-flex flex-column">
+                                <h4 class="card-title">7. Dolittle</h4>
+                                <p class="card-text">
+                                    A physician who can talk to animals embarks on an adventure to find a legendary island with a young
+                                    apprentice and a crew of strange pets.
+                                </p>
+                                <a class="btn btn-primary trailerBtn btn-block mt-auto" href="https://www.imdb.com/video/vi267763481?ref_=tt_pv_vi_aiv_1">Watch Trailer</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-6" style="float:left">
+                        <div class="card mb-2 top-20-card">
+                            <img class="card-img-top"
+                                 src="/css/Images//LittleWomen.jpg" alt="Little Women Poster">
+                            <div class="card-body d-flex flex-column">
+                                <h4 class="card-title">8. Little Women</h4>
+                                <p class="card-text">
+                                    Jo March reflects back and forth on her life, telling the beloved story of the March sisters - four young
+                                    women, each determined to live life on her own terms.
+                                </p>
+                                <a class="btn btn-primary trailerBtn btn-block mt-auto" href="https://www.imdb.com/video/vi2655304729?ref_=tt_pv_vi_aiv_1">Watch Trailer</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!--/.Second slide-->
+                <!--Third slide-->
+                <div class="carousel-item">
+
+                    <div class="col-lg-3 col-md-6 col-sm-6" style="float:left">
+                        <div class="card mb-2 top-20-card">
+                            <img class="card-img-top"
+                                 src="/css/Images//TheInvisibleMan.jpg" alt="The Invisible Man Poster">
+                            <div class="card-body d-flex flex-column">
+                                <h4 class="card-title">9. The Invisible Man</h4>
+                                <p class="card-text">
+                                    When Cecilia's abusive ex takes his own life and leaves her his fortune, she suspects his death was a hoax. As a series
+                                    of coincidences turn lethal, Cecilia works to prove that she is being hunted by someone nobody can see.
+                                </p>
+                                <a class="btn btn-primary trailerBtn btn-block mt-auto" href="https://www.imdb.com/video/vi2623455001?playlistId=tt1051906&ref_=tt_ov_vi">Watch Trailer</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-6" style="float:left">
+                        <div class="card mb-2 top-20-card">
+                            <img class="card-img-top"
+                                 src="/css/Images//CallOfTheWild.jpg" alt="The Call of the Wild Poster">
+                            <div class="card-body d-flex flex-column">
+                                <h4 class="card-title">10. The Call of the Wild</h4>
+                                <p class="card-text">
+                                    A sled dog struggles for survival in the wilds of the Yukon.
+                                </p>
+                                <a class="btn btn-primary trailerBtn btn-block mt-auto" href="https://www.imdb.com/video/vi264945433?playlistId=tt7504726&ref_=tt_ov_vi">Watch Trailer</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-6" style="float:left">
+                        <div class="card mb-2 top-20-card">
+                            <img class="card-img-top"
+                                 src="/css/Images//Onward.jpg" alt="Onward Poster">
+                            <div class="card-body d-flex flex-column">
+                                <h4 class="card-title">11. Onward</h4>
+                                <p class="card-text">
+                                    Two elven brothers embark on a quest to bring their father back for one day.
+                                </p>
+                                <a class="btn btn-primary trailerBtn btn-block mt-auto" href="https://www.imdb.com/video/vi1851637529?ref_=tt_pv_vi_aiv_3">Watch Trailer</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-6" style="float:left">
+                        <div class="card mb-2 top-20-card">
+                            <img class="card-img-top"
+                                 src="/css/Images//KnivesOut.jpg" alt="Knives Out Poster">
+                            <div class="card-body d-flex flex-column">
+                                <h4 class="card-title">12. Knives Out</h4>
+                                <p class="card-text">
+                                    A detective investigates the death of a patriarch of an eccentric, combative family.
+                                </p>
+                                <a class="btn btn-primary trailerBtn btn-block mt-auto" href="https://www.imdb.com/video/vi2464857881?playlistId=tt8946378&ref_=tt_ov_vi">Watch Trailer</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!--/.Third slide-->
+                <!--Fourth slide-->
+                <div class="carousel-item">
+
+                    <div class="col-lg-3 col-md-6 col-sm-6" style="float:left">
+                        <div class="card mb-2 top-20-card">
+                            <img class="card-img-top"
+                                 src="/css/Images//Frozen2.jpg" alt="Frozen II Poster">
+                            <div class="card-body d-flex flex-column">
+                                <h4 class="card-title">13. Frozen II</h4>
+                                <p class="card-text">
+                                    Anna, Elsa, Kristoff, Olaf and Sven leave Arendelle to travel to an ancient, autumn-bound forest of an enchanted land.
+                                    They set out to find the origin of Elsa's powers in order to save their kingdom.
+                                </p>
+                                <a class="btn btn-primary trailerBtn btn-block mt-auto" href="https://www.imdb.com/video/vi2985672473?ref_=tt_pv_vi_aiv_3">Watch Trailer</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-6" style="float:left">
+                        <div class="card mb-2 top-20-card">
+                            <img class="card-img-top"
+                                 src="/css/Images//Tenet.jpg" alt="Tenet Poster">
+                            <div class="card-body d-flex flex-column">
+                                <h4 class="card-title">14. Tenet</h4>
+                                <p class="card-text">
+                                    Armed with only one word, Tenet, and fighting for the survival of the entire world, a Protagonist journeys through a
+                                    twilight world of international espionage on a mission that will unfold in something beyond real time.
+                                </p>
+                                <a class="btn btn-primary trailerBtn btn-block mt-auto" href="https://www.imdb.com/video/vi2051194393?ref_=tt_pv_vi_aiv_2">Watch Trailer</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-6" style="float:left">
+                        <div class="card mb-2 top-20-card">
+                            <img class="card-img-top"
+                                 src="/css/Images//SpiesInDisguise.jpg" alt="Spies in Disguise Poster">
+                            <div class="card-body d-flex flex-column">
+                                <h4 class="card-title">15. Spies in Disguise</h4>
+                                <p class="card-text">
+                                    When the world's best spy is turned into a pigeon, he must rely on his nerdy tech officer to save the world.
+                                </p>
+                                <a class="btn btn-primary trailerBtn btn-block mt-auto" href="https://www.imdb.com/video/vi947961625?ref_=tt_pv_vi_aiv_3">Watch Trailer</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-6" style="float:left">
+                        <div class="card mb-2 top-20-card">
+                            <img class="card-img-top"
+                                 src="/css/Images//TheGentlemen.jpg" alt="The Gentlemen Poster">
+                            <div class="card-body d-flex flex-column">
+                                <h4 class="card-title">16. The Gentlemen</h4>
+                                <p class="card-text">
+                                    An American expat tries to sell off his highly profitable marijuana empire in London, triggering plots, schemes, bribery
+                                    and blackmail in an attempt to steal his domain out from under him.
+                                </p>
+                                <a class="btn btn-primary trailerBtn btn-block mt-auto" href="https://www.imdb.com/video/vi814137113?ref_=tt_pv_vi_aiv_2">Watch Trailer</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!--/.Fourth slide-->
+                <!--Fifth slide-->
+                <div class="carousel-item">
+
+                    <div class="col-lg-3 col-md-6 col-sm-6" style="float:left">
+                        <div class="card mb-2 top-20-card">
+                            <img class="card-img-top"
+                                 src="/css/Images//JustMercy.jpg" alt="Just Mercy Poster">
+                            <div class="card-body d-flex flex-column">
+                                <h4 class="card-title">17. Just Mercy</h4>
+                                <p class="card-text">
+                                    World-renowned civil rights defense attorney Bryan Stevenson works to free a wrongly condemned death row prisoner.
+                                </p>
+                                <a class="btn btn-primary trailerBtn btn-block mt-auto" href="https://www.imdb.com/video/vi725204761?playlistId=tt4916630&ref_=tt_ov_vi">Watch Trailer</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-6" style="float:left">
+                        <div class="card mb-2 top-20-card">
+                            <img class="card-img-top"
+                                 src="/css/Images//Parasite.jpg" alt="Parasite Poster">
+                            <div class="card-body d-flex flex-column">
+                                <h4 class="card-title">18. Parasite</h4>
+                                <p class="card-text">
+                                    Greed and class discrimination threaten the newly formed symbiotic relationship between the
+                                    wealthy Park family and the destitute Kim clan.
+                                </p>
+                                <a class="btn btn-primary trailerBtn btn-block mt-auto" href="https://www.imdb.com/video/vi1015463705?playlistId=tt6751668&ref_=tt_ov_vi">Watch Trailer</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-6" style="float:left">
+                        <div class="card mb-2 top-20-card">
+                            <img class="card-img-top"
+                                 src="/css/Images//FantasyIsland.jpg" alt="Fantasy Island Poster">
+                            <div class="card-body d-flex flex-column">
+                                <h4 class="card-title">19. Fantasy Island</h4>
+                                <p class="card-text">
+                                    When the owner and operator of a luxurious island invites a collection of guests to live out their
+                                    most elaborate fantasies in relative seclusion, chaos quickly descends.
+                                </p>
+                                <a class="btn btn-primary trailerBtn btn-block mt-auto" href="https://www.imdb.com/video/vi55688985?playlistId=tt0983946&ref_=tt_ov_vi">Watch Trailer</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-6" style="float:left">
+                        <div class="card mb-2 top-20-card">
+                            <img class="card-img-top"
+                                 src="/css/Images//UncutGems.jpg" alt="Uncut Gems Poster">
+                            <div class="card-body d-flex flex-column">
+                                <h4 class="card-title">20. Uncut Gems</h4>
+                                <p class="card-text">
+                                    With his debts mounting and angry collectors closing in, a fast-talking New York City jeweler
+                                    risks everything in hope of staying afloat and alive.
+                                </p>
+                                <a class="btn btn-primary trailerBtn btn-block mt-auto" href="https://www.imdb.com/video/vi2668412697?playlistId=tt5727208&ref_=tt_ov_vi">Watch Trailer</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!--/.Fifth slide-->
+
+            </div>
+            <!--/.Slides-->
+        </div>
+        <!--/.Carousel Wrapper-->
+    </div>
+</section>
+
+<section id="HorrorList">
+    <h3 class="carousel-heading">Top 10 Box Horror Hits of 2020</h3>
+    <!--Carousel Wrapper-->
+    <div id="HorrorTop10" class="carousel slide carousel-multi-item" data-ride="carousel('hover')">
+
+        <!--Controls-->
+        <a class="carousel-control-prev" href="#HorrorTop10" role="button" data-slide="prev" style="left: -95px;">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#HorrorTop10" role="button" data-slide="next" style="right: -95px;">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+        <!--/.Controls-->
+        <!--Slides-->
+        <div class="carousel-parent">
+            <div class="carousel-inner " role="listbox">
+
+                <!--First slide-->
+                <div class="carousel-item active">
+
+                    <div class="col-md-2" style="float:left">
+                        <div class="card mb-2 horror-card">
+                            <img class="card-img-top"
+                                 src="/css/Images/BadHair.jpg" alt="Bad Hair Poster">
+                            <div class="card-body d-flex flex-column">
+                                <h4 class="card-title">1. Bad Hair</h4>
+                                <p class="card-text">
+                                    In 1989 an ambitious young woman gets a weave in order to succeed in the image-obsessed
+                                    world of music television. However, her flourishing career may come at a great cost when 
+                                    she realizes that her new hair may have a mind of its own.
+                                </p>
+                                <a class="btn btn-primary btn-block mt-auto" href="https://www.imdb.com/video/vi3046949145?playlistId=tt4798836&ref_=tt_ov_vi">Watch Trailer</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-2" style="float:left">
+                        <div class="card mb-2 horror-card">
+                            <img class="card-img-top"
+                                 src="/css/Images/Spree.jpg" alt="Spree Poster">
+                            <div class="card-body d-flex flex-column">
+                                <h4 class="card-title">2. Spree</h4>
+                                <p class="card-text">
+                                    Thirsty for a following, Kurt Kunkle is a rideshare driver who has figured out a deadly plan to go viral.
+                                </p>
+                                <a class="btn btn-primary trailerBtn btn-block mt-auto " href="https://www.imdb.com/video/vi1115078169?playlistId=tt11394332&ref_=tt_ov_vi">Watch Trailer</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-2" style="float:left">
+                        <div class="card mb-2 horror-card">
+                            <img class="card-img-top"
+                                 src="/css/Images/TheOwners.jpg" alt="The Owners Poster">
+                            <div class="card-body d-flex flex-column">
+                                <h4 class="card-title">3. The Owners</h4>
+                                <p class="card-text">
+                                    A group of friends think they find an easy score at an empty house with a safe full of cash. But when the owners,
+                                    an elderly couple, come home early, the tables are suddenly turned.
+                                </p>
+                                <a class="btn btn-primary trailerBtn btn-block mt-auto" href="https://www.imdb.com/video/vi1030733337?playlistId=tt9806370&ref_=tt_ov_vi">Watch Trailer</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-2" style="float:left">
+                        <div class="card mb-2 horror-card">
+                            <img class="card-img-top"
+                                 src="/css/Images/Feedback.jpg" alt="Feedback Poster">
+                            <div class="card-body d-flex flex-column">
+                                <h4 class="card-title">4. Feedback</h4>
+                                <p class="card-text">
+                                    A radio star experiences the worst night of his life when stalkers assault the radio station where he's working.
+                                </p>
+                                <a class="btn btn-primary trailerBtn btn-block mt-auto" href="https://www.imdb.com/video/vi350076697?playlistId=tt7857374&ref_=tt_ov_vi">Watch Trailer</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-2" style="float:left">
+                        <div class="card mb-2 horror-card">
+                            <img class="card-img-top"
+                                 src="/css/Images/GretelAndHansel.jpg" alt="Gretel & Hansel Poster">
+                            <div class="card-body d-flex flex-column">
+                                <h4 class="card-title">5. Gretel & Hansel</h4>
+                                <p class="card-text">
+                                    A long time ago in a distant fairy tale countryside, a young girl leads her little brother into a dark wood in desperate
+                                    search of food and work, only to stumble upon a nexus of terrifying evil.
+                                </p>
+                                <a class="btn btn-primary trailerBtn btn-block mt-auto" href="https://www.imdb.com/video/vi1141620505?playlistId=tt9086228&ref_=tt_ov_vi">Watch Trailer</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!--/.First slide-->
+                <!--Second slide-->
+                <div class="carousel-item">
+
+                    <div class="col-md-2" style="float:left">
+                        <div class="card mb-2 horror-card">
+                            <img class="card-img-top"
+                                 src="/css/Images/Amulet.jpg" alt="Amulet Poster">
+                            <div class="card-body d-flex flex-column">
+                                <h4 class="card-title">6. Amulet</h4>
+                                <p class="card-text">
+                                    An ex-soldier, living homeless in London, is offered a place to stay at a decaying house inhabited by a young woman 
+                                    and her dying mother. As he starts to fall for her, he cannot ignore his suspicion that something sinister is going on.
+                                </p>
+                                <a class="btn btn-primary trailerBtn btn-block mt-auto" href="https://www.imdb.com/video/vi3558522393?playlistId=tt8332802&ref_=tt_ov_vi">Watch Trailer</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-2" style="float:left">
+                        <div class="card mb-2 horror-card">
+                            <img class="card-img-top"
+                                 src="/css/Images/BlackBox.jpg" alt="Black Box Poster">
+                            <div class="card-body d-flex flex-column">
+                                <h4 class="card-title">7. Black Box</h4>
+                                <p class="card-text">
+                                    After losing his wife and his memory in a car accident, a single father undergoes an agonizing experimental treatment
+                                    that causes him to question who he really is.
+                                </p>
+                                <a class="btn btn-primary trailerBtn btn-block mt-auto" href="https://www.imdb.com/video/vi3114516761?playlistId=tt12298506&ref_=tt_ov_vi">Watch Trailer</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-2" style="float:left">
+                        <div class="card mb-2 horror-card">
+                            <img class="card-img-top"
+                                 src="/css/Images/TheLodge.jpg" alt="The Lodge Poster">
+                            <div class="card-body d-flex flex-column">
+                                <h4 class="card-title">8. The Lodge</h4>
+                                <p class="card-text">
+                                    A soon-to-be stepmom is snowed in with her fiancé's two children at a remote holiday village. Just as relations begin to thaw between
+                                    the trio, some strange and frightening events take place.
+                                </p>
+                                <a class="btn btn-primary trailerBtn btn-block mt-auto" href="https://www.imdb.com/video/vi1885847321?playlistId=tt7347846&ref_=tt_ov_vi">Watch Trailer</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-2" style="float:left">
+                        <div class="card mb-2 horror-card">
+                            <img class="card-img-top"
+                                 src="/css/Images/TheWretched.jpg" alt="The Wretched Poster">
+                            <div class="card-body d-flex flex-column">
+                                <h4 class="card-title">9. The Wretched</h4>
+                                <p class="card-text">
+                                    A defiant teenage boy, struggling with his parents' imminent divorce, faces off with a thousand year-old witch, 
+                                    who is living beneath the skin of and posing as the woman next door.
+                                </p>
+                                <a class="btn btn-primary trailerBtn btn-block mt-auto" href="https://www.imdb.com/video/vi2627583513?playlistId=tt8305806&ref_=tt_ov_vi">Watch Trailer</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-2" style="float:left">
+                        <div class="card mb-2 horror-card">
+                            <img class="card-img-top"
+                                 src="/css/Images/AudreyEarnshaw.jpg" alt="The Curse of Audrey Earnshaw Poster">
+                            <div class="card-body d-flex flex-column">
+                                <h4 class="card-title">10. The Curse of Audrey Earnshaw</h4>
+                                <p class="card-text">
+                                    A devout community suffering from a plague is torn apart by a beautiful young woman and the forces of witchcraft, black magic, and possession.
+                                </p>
+                                <a class="btn btn-primary trailerBtn btn-block mt-auto" href="https://www.imdb.com/video/vi1185792281?playlistId=tt7157146&ref_=tt_ov_vi">Watch Trailer</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!--/.Second slide-->
+            </div>
+            <!--/.Slides-->
+        </div>
+        <!--/.Carousel Wrapper-->
+    </div>
+</section>
+
+<section id="ComedyList">
+    <h3 class="carousel-heading">Top 10 Box Horror Hits of 2020</h3>
+    <!--Carousel Wrapper-->
+    <div id="ComedyTop10" class="carousel slide carousel-multi-item" data-ride="carousel('hover')">
+
+        <!--Controls-->
+        <a class="carousel-control-prev" href="#ComedyTop10" role="button" data-slide="prev" style="left: -95px;">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#ComedyTop10" role="button" data-slide="next" style="right: -95px;">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+        <!--/.Controls-->
+        <!--Slides-->
+        <div class="carousel-parent">
+            <div class="carousel-inner " role="listbox">
+
+                <!--First slide-->
+                <div class="carousel-item active">
+
+                    <div class="col-md-2" style="float:left">
+                        <div class="card mb-2 comedy-card">
+                            <img class="card-img-top"
+                                 src="/css/Images/BadHair.jpg" alt="Bad Hair Poster">
+                            <div class="card-body d-flex flex-column">
+                                <h4 class="card-title">1. Bad Hair</h4>
+                                <p class="card-text">
+                                    In 1989 an ambitious young woman gets a weave in order to succeed in the image-obsessed
+                                    world of music television. However, her flourishing career may come at a great cost when
+                                    she realizes that her new hair may have a mind of its own.
+                                </p>
+                                <a class="btn btn-primary btn-block mt-auto" href="https://www.imdb.com/video/vi3046949145?playlistId=tt4798836&ref_=tt_ov_vi">Watch Trailer</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-2" style="float:left">
+                        <div class="card mb-2 comedy-card">
+                            <img class="card-img-top"
+                                 src="/css/Images/Spree.jpg" alt="Spree Poster">
+                            <div class="card-body d-flex flex-column">
+                                <h4 class="card-title">2. Spree</h4>
+                                <p class="card-text">
+                                    Thirsty for a following, Kurt Kunkle is a rideshare driver who has figured out a deadly plan to go viral.
+                                </p>
+                                <a class="btn btn-primary trailerBtn btn-block mt-auto " href="https://www.imdb.com/video/vi1115078169?playlistId=tt11394332&ref_=tt_ov_vi">Watch Trailer</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-2" style="float:left">
+                        <div class="card mb-2 comedy-card">
+                            <img class="card-img-top"
+                                 src="/css/Images/TheOwners.jpg" alt="The Owners Poster">
+                            <div class="card-body d-flex flex-column">
+                                <h4 class="card-title">3. The Owners</h4>
+                                <p class="card-text">
+                                    A group of friends think they find an easy score at an empty house with a safe full of cash. But when the owners,
+                                    an elderly couple, come home early, the tables are suddenly turned.
+                                </p>
+                                <a class="btn btn-primary trailerBtn btn-block mt-auto" href="https://www.imdb.com/video/vi1030733337?playlistId=tt9806370&ref_=tt_ov_vi">Watch Trailer</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-2" style="float:left">
+                        <div class="card mb-2 comedy-card">
+                            <img class="card-img-top"
+                                 src="/css/Images/Feedback.jpg" alt="Feedback Poster">
+                            <div class="card-body d-flex flex-column">
+                                <h4 class="card-title">4. Feedback</h4>
+                                <p class="card-text">
+                                    A radio star experiences the worst night of his life when stalkers assault the radio station where he's working.
+                                </p>
+                                <a class="btn btn-primary trailerBtn btn-block mt-auto" href="https://www.imdb.com/video/vi350076697?playlistId=tt7857374&ref_=tt_ov_vi">Watch Trailer</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-2" style="float:left">
+                        <div class="card mb-2 comedy-card">
+                            <img class="card-img-top"
+                                 src="/css/Images/GretelAndHansel.jpg" alt="Gretel & Hansel Poster">
+                            <div class="card-body d-flex flex-column">
+                                <h4 class="card-title">5. Gretel & Hansel</h4>
+                                <p class="card-text">
+                                    A long time ago in a distant fairy tale countryside, a young girl leads her little brother into a dark wood in desperate
+                                    search of food and work, only to stumble upon a nexus of terrifying evil.
+                                </p>
+                                <a class="btn btn-primary trailerBtn btn-block mt-auto" href="https://www.imdb.com/video/vi1141620505?playlistId=tt9086228&ref_=tt_ov_vi">Watch Trailer</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!--/.First slide-->
+                <!--Second slide-->
+                <div class="carousel-item">
+
+                    <div class="col-md-2" style="float:left">
+                        <div class="card mb-2 comedy-card">
+                            <img class="card-img-top"
+                                 src="/css/Images/Amulet.jpg" alt="Amulet Poster">
+                            <div class="card-body d-flex flex-column">
+                                <h4 class="card-title">6. Amulet</h4>
+                                <p class="card-text">
+                                    An ex-soldier, living homeless in London, is offered a place to stay at a decaying house inhabited by a young woman
+                                    and her dying mother. As he starts to fall for her, he cannot ignore his suspicion that something sinister is going on.
+                                </p>
+                                <a class="btn btn-primary trailerBtn btn-block mt-auto" href="https://www.imdb.com/video/vi3558522393?playlistId=tt8332802&ref_=tt_ov_vi">Watch Trailer</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-2" style="float:left">
+                        <div class="card mb-2 comedy-card">
+                            <img class="card-img-top"
+                                 src="/css/Images/BlackBox.jpg" alt="Black Box Poster">
+                            <div class="card-body d-flex flex-column">
+                                <h4 class="card-title">7. Black Box</h4>
+                                <p class="card-text">
+                                    After losing his wife and his memory in a car accident, a single father undergoes an agonizing experimental treatment
+                                    that causes him to question who he really is.
+                                </p>
+                                <a class="btn btn-primary trailerBtn btn-block mt-auto" href="https://www.imdb.com/video/vi3114516761?playlistId=tt12298506&ref_=tt_ov_vi">Watch Trailer</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-2" style="float:left">
+                        <div class="card mb-2 comedy-card">
+                            <img class="card-img-top"
+                                 src="/css/Images/TheLodge.jpg" alt="The Lodge Poster">
+                            <div class="card-body d-flex flex-column">
+                                <h4 class="card-title">8. The Lodge</h4>
+                                <p class="card-text">
+                                    A soon-to-be stepmom is snowed in with her fiancé's two children at a remote holiday village. Just as relations begin to thaw between
+                                    the trio, some strange and frightening events take place.
+                                </p>
+                                <a class="btn btn-primary trailerBtn btn-block mt-auto" href="https://www.imdb.com/video/vi1885847321?playlistId=tt7347846&ref_=tt_ov_vi">Watch Trailer</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-2" style="float:left">
+                        <div class="card mb-2 comedy-card">
+                            <img class="card-img-top"
+                                 src="/css/Images/TheWretched.jpg" alt="The Wretched Poster">
+                            <div class="card-body d-flex flex-column">
+                                <h4 class="card-title">9. The Wretched</h4>
+                                <p class="card-text">
+                                    A defiant teenage boy, struggling with his parents' imminent divorce, faces off with a thousand year-old witch,
+                                    who is living beneath the skin of and posing as the woman next door.
+                                </p>
+                                <a class="btn btn-primary trailerBtn btn-block mt-auto" href="https://www.imdb.com/video/vi2627583513?playlistId=tt8305806&ref_=tt_ov_vi">Watch Trailer</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-2" style="float:left">
+                        <div class="card mb-2 comedy-card">
+                            <img class="card-img-top"
+                                 src="/css/Images/AudreyEarnshaw.jpg" alt="The Curse of Audrey Earnshaw Poster">
+                            <div class="card-body d-flex flex-column">
+                                <h4 class="card-title">10. The Curse of Audrey Earnshaw</h4>
+                                <p class="card-text">
+                                    A devout community suffering from a plague is torn apart by a beautiful young woman and the forces of witchcraft, black magic, and possession.
+                                </p>
+                                <a class="btn btn-primary trailerBtn btn-block mt-auto" href="https://www.imdb.com/video/vi1185792281?playlistId=tt7157146&ref_=tt_ov_vi">Watch Trailer</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!--/.Second slide-->
+            </div>
+            <!--/.Slides-->
+        </div>
+        <!--/.Carousel Wrapper-->
+    </div>
+</section>
