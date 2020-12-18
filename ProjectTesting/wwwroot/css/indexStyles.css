@@ -1,4 +1,6 @@
-﻿html {
+﻿/* Movies */
+
+html {
     background: url("/css/Images/Background_IMG.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -6,9 +8,17 @@
     background-size: cover;
 }
 
+.section-margin {
+    margin-bottom: 50px;
+}
+
 .carousel-heading {
     text-align: center;
     color: #1b6ec2;
+}
+
+.carousel-control {
+    width: 10%
 }
 
 .carousel-control-prev-icon {
@@ -23,11 +33,57 @@
     min-height: 50rem;
 }
 
+.horizontal-cards-2 {
+    margin: 0 15px;
+    max-width: 540px;
+    max-height: 265px;
+}
 
+.card-height {
+    height: 18.5rem;
+}
+
+.horizontal-body-2 {
+    width: 140%;
+    height: 100%;
+    padding-right: 30px;
+}
+
+.horizontal-cards-3{
+    min-height: 33rem;
+}
+
+.horizontal-body-3 {
+    height: 100%;
+}
+
+.three-card-img {
+    margin: 0 auto;
+}
+
+.horizontal-cards-2 {
+    margin: 0 15px;
+    max-width: 540px;
+    max-height: 270px;
+}
+
+.comedy-horizontal-cards-3 {
+    min-height: 35rem;
+}
+
+.vertical-card-text {
+    height: 10rem;
+}
 
 .trailerBtn {
     margin: 0 auto;
     bottom: 0;
+}
+
+/* TV Shows */
+
+.season {
+    font-size: 1.25rem;
 }
 
 /******Search Bar******/

@@ -1,6 +1,1049 @@
 ﻿@{
     ViewData["Title"] = "Privacy Policy";
 }
-<h1>@ViewData["Title"]</h1>
+@model MovieModel
 
-<p>Use this page to detail your site's privacy policy.</p>
+@using (Html.BeginForm("Search", "Home", FormMethod.Get))
+{
+
+}
+<section id="TopShows2020" class="section-margin">
+    <h3 class="carousel-heading">Top 20 TV Shows of 2020</h3>
+    <!--Carousel Wrapper-->
+    <div id="Top20Shows" class="carousel slide carousel-multi-item" data-ride="carousel('hover')">
+
+        <!--Controls-->
+        <a class="carousel-control-prev" href="#Top20Shows" role="button" data-slide="prev" style="left: -155px;">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#Top20Shows" role="button" data-slide="next" style="right: -155px;">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+        <!--/.Controls-->
+        <!--Slides-->
+        <div class="carousel-parent">
+            <div class="carousel-inner" role="listbox">
+
+                <!--First slide-->
+                <div class="carousel-item active">
+
+                    <div class="col-lg-3 col-md-6 col-sm-6" style="float:left">
+                        <div class="card mb-2 top-20-card">
+                            <img class="card-img-top"
+                                 src="/css/Images/TheBaby-SittersClub.jpg" alt="The Baby-Sitters Club Poster">
+                            <div class="card-body d-flex flex-column">
+                                <h4 class="card-title">1. The Baby-Sitters Club</h4>
+                                <p class="season">Season 1</p>
+                                <p class="card-text">
+                                    Based on the book series of the same name focusing on a group of young girls who start their own babysitting service.
+                                </p>
+                                <a class="btn btn-primary btn-block mt-auto" href="https://www.imdb.com/video/vi2268053017?playlistId=tt8690518&ref_=tt_ov_vi">Watch Trailer</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-6" style="float:left">
+                        <div class="card mb-2 top-20-card">
+                            <img class="card-img-top"
+                                 src="/css/Images/FeelGood.jpg" alt="Feel Good Poster">
+                            <div class="card-body d-flex flex-column">
+                                <h4 class="card-title">2. Feel Good</h4>
+                                <p class="season">Season 1</p>
+                                <p class="card-text">
+                                    The series follows recovering addict and comedian Mae, who is trying to control the addictive 
+                                    behaviors and intense romanticism that permeate every facet of her life.
+                                </p>
+                                <a class="btn btn-primary trailerBtn btn-block mt-auto " href="https://www.imdb.com/video/vi2912599577?playlistId=tt10098620&ref_=tt_ov_vi">Watch Trailer</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-6" style="float:left">
+                        <div class="card mb-2 top-20-card">
+                            <img class="card-img-top"
+                                 src="/css/Images/SchittsCreek.jpg" alt="Schitt's Creek Poster">
+                            <div class="card-body d-flex flex-column">
+                                <h4 class="card-title">3. Schitt's Creek</h4>
+                                <p class="season">Season 6</p>
+                                <p class="card-text">
+                                    When rich video-store magnate Johnny Rose and his family suddenly find themselves broke, 
+                                    they are forced to leave their pampered lives to regroup in Schitt's Creek.
+                                </p>
+                                <a class="btn btn-primary trailerBtn btn-block mt-auto" href="https://www.imdb.com/video/vi3254828825?playlistId=tt3526078&ref_=tt_ov_vi">Watch Trailer</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-6" style="float:left">
+                        <div class="card mb-2 top-20-card">
+                            <img class="card-img-top"
+                                 src="/css/Images/PEN15.jpg" alt="PEN15 Poster">
+                            <div class="card-body d-flex flex-column">
+                                <h4 class="card-title">4. PEN15</h4>
+                                <p class="season">Season 2</p>
+                                <p class="card-text">
+                                    The comedic story of middle school seen through the eyes of two 7th grade girls dealing with the awkwardness of being a teenager.
+                                </p>
+                                <a class="btn btn-primary trailerBtn btn-block mt-auto" href="https://www.imdb.com/video/vi3866017305?playlistId=tt8324422&ref_=tt_ov_vi">Watch Trailer</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!--/.First slide-->
+                <!--Second slide-->
+                <div class="carousel-item">
+
+                    <div class="col-lg-3 col-md-6 col-sm-6" style="float:left">
+                        <div class="card mb-2 top-20-card">
+                            <img class="card-img-top"
+                                 src="/css/Images/WhatWeDoInTheShadows.jpg" alt="What We Do in the Shadows Poster">
+                            <div class="card-body d-flex flex-column">
+                                <h4 class="card-title">5. What We Do in the Shadows</h4>
+                                <p class="season">Season 2</p>
+                                <p class="card-text">
+                                    A look into the daily (or rather, nightly) lives of three vampires, who've lived together for over 100 years, on Staten Island.
+                                </p>
+                                <a class="btn btn-primary trailerBtn btn-block mt-auto" href="https://www.imdb.com/video/vi3027810841?playlistId=tt7908628&ref_=tt_ov_vi">Watch Trailer</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-6" style="float:left">
+                        <div class="card mb-2 top-20-card">
+                            <img class="card-img-top"
+                                 src="/css/Images/TheVirtues.jpg" alt="The Virtues Poster">
+                            <div class="card-body d-flex flex-column">
+                                <h4 class="card-title">6. The Virtues</h4>
+                                <p class="season">Season 1</p>
+                                <p class="card-text">
+                                    Falling into despair after his nine-year-old son leaves for Australia with his ex, Joseph walks away from 
+                                    his present life and boards a boat for Ireland to confront painful memories from his childhood.
+                                </p>
+                                <a class="btn btn-primary trailerBtn btn-block mt-auto" href="https://www.imdb.com/video/vi3604462617?playlistId=tt7186126&ref_=tt_ov_vi">Watch Trailer</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-6" style="float:left">
+                        <div class="card mb-2 top-20-card">
+                            <img class="card-img-top"
+                                 src="/css/Images/PValley.jpg" alt="P-Valley Poster">
+                            <div class="card-body d-flex flex-column">
+                                <h4 class="card-title">7. P-Valley</h4>
+                                <p class="season">Season 1</p>
+                                <p class="card-text">
+                                    Follows the lives of strip club dancers working down in the Dirty Delta.
+                                </p>
+                                <a class="btn btn-primary trailerBtn btn-block mt-auto" href="https://www.imdb.com/video/vi151502361?playlistId=tt9340526&ref_=tt_ov_vi">Watch Trailer</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-6" style="float:left">
+                        <div class="card mb-2 top-20-card">
+                            <img class="card-img-top"
+                                 src="/css/Images/DashAndLily.jpg" alt="Dash & Lily Poster">
+                            <div class="card-body d-flex flex-column">
+                                <h4 class="card-title">8. Dash & Lily</h4>
+                                <p class="season">Season 1</p>
+                                <p class="card-text">
+                                    A whirlwind holiday romance builds as cynical Dash and optimistic Lily trade dares,
+                                    dreams and desires in the notebook they pass back and forth at locations all across New York City.
+                                </p>
+                                <a class="btn btn-primary trailerBtn btn-block mt-auto" href="https://www.imdb.com/video/vi226935065?playlistId=tt1758589&ref_=tt_ov_vi">Watch Trailer</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!--/.Second slide-->
+                <!--Third slide-->
+                <div class="carousel-item">
+
+                    <div class="col-lg-3 col-md-6 col-sm-6" style="float:left">
+                        <div class="card mb-2 top-20-card">
+                            <img class="card-img-top"
+                                 src="/css/Images/ParksAndRecreation.jpg" alt="Parks and Recreation Poster">
+                            <div class="card-body d-flex flex-column">
+                                <h4 class="card-title">9. Parks and Recreation</h4>
+                                <p class="season">A Parks and Recreation Special</p>
+                                <p class="card-text">
+                                    The story comes from the events of the day-Pawnee's most dedicated civil servant, 
+                                    Leslie Knope, is determined to stay connected to her friends in a time of social distancing.
+                                </p>
+                                <a class="btn btn-primary trailerBtn btn-block mt-auto" href="https://www.imdb.com/video/vi3024399897?playlistId=tt1266020&ref_=tt_ov_vi">Watch Trailer</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-6" style="float:left">
+                        <div class="card mb-2 top-20-card">
+                            <img class="card-img-top"
+                                 src="/css/Images/BetterThings.jpg" alt="Better Things Poster">
+                            <div class="card-body d-flex flex-column">
+                                <h4 class="card-title">10. Better Things</h4>
+                                <p class="season">Season 4</p>
+                                <p class="card-text">
+                                    An actress raises her three daughters while juggling the pressures of working in Hollywood and being a single parent.
+                                </p>
+                                <a class="btn btn-primary trailerBtn btn-block mt-auto" href="https://www.imdb.com/video/vi2994061081?playlistId=tt4370596&ref_=tt_ov_vi">Watch Trailer</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-6" style="float:left">
+                        <div class="card mb-2 top-20-card">
+                            <img class="card-img-top"
+                                 src="/css/Images/ImmigrationNation.jpg" alt="Immigration Nation Poster">
+                            <div class="card-body d-flex flex-column">
+                                <h4 class="card-title">11. Immigration Nation</h4>
+                                <p class="season">Miniseries</p>
+                                <p class="card-text">
+                                    A documentary looking inside the world of immigration enforcement under the Trump administration.
+                                </p>
+                                <a class="btn btn-primary trailerBtn btn-block mt-auto" href="https://www.imdb.com/video/vi964083225?playlistId=tt12754910&ref_=tt_ov_vi">Watch Trailer</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-6" style="float:left">
+                        <div class="card mb-2 top-20-card">
+                            <img class="card-img-top"
+                                 src="/css/Images/HarleyQuinn.jpg" alt="Harley Quinn Poster">
+                            <div class="card-body d-flex flex-column">
+                                <h4 class="card-title">12. Harley Quinn</h4>
+                                <p class="season">Season 2</p>
+                                <p class="card-text">
+                                    The series focuses on a single Harley Quinn, who sets off to make it on her own in Gotham City.
+                                </p>
+                                <a class="btn btn-primary trailerBtn btn-block mt-auto" href="https://www.imdb.com/video/vi3487416089?playlistId=tt7658402&ref_=tt_ov_vi">Watch Trailer</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!--/.Third slide-->
+                <!--Fourth slide-->
+                <div class="carousel-item">
+
+                    <div class="col-lg-3 col-md-6 col-sm-6" style="float:left">
+                        <div class="card mb-2 top-20-card">
+                            <img class="card-img-top"
+                                 src="/css/Images/OneDayAtATime.jpg" alt="One Day at a Time Poster">
+                            <div class="card-body d-flex flex-column">
+                                <h4 class="card-title">13. One Day at a Time</h4>
+                                <p class="season">Season 4</p>
+                                <p class="card-text">
+                                    Follows three generations of the same Cuban-American family living in the same house: a newly divorced former 
+                                    military mother, her teenage daughter and tween son, and her old-school mother.
+                                </p>
+                                <a class="btn btn-primary trailerBtn btn-block mt-auto" href="https://www.imdb.com/video/vi303151641?playlistId=tt5339440&ref_=tt_ov_vi">Watch Trailer</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-6" style="float:left">
+                        <div class="card mb-2 top-20-card">
+                            <img class="card-img-top"
+                                 src="/css/Images/TheQueensGambit.jpg" alt="The Queen's Gambit Poster">
+                            <div class="card-body d-flex flex-column">
+                                <h4 class="card-title">14. The Queen's Gambit</h4>
+                                <p class="season">Miniseries</p>
+                                <p class="card-text">
+                                    Orphaned at the tender age of nine, prodigious introvert Beth Harmon discovers and 
+                                    masters the game of chess in 1960s USA. But child stardom comes at a price.
+                                </p>
+                                <a class="btn btn-primary trailerBtn btn-block mt-auto" href="https://www.imdb.com/video/vi1185857817?playlistId=tt10048342&ref_=tt_ov_vi">Watch Trailer</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-6" style="float:left">
+                        <div class="card mb-2 top-20-card">
+                            <img class="card-img-top"
+                                 src="/css/Images/BetterCallSaul.jpg" alt="Better Call Saul Poster">
+                            <div class="card-body d-flex flex-column">
+                                <h4 class="card-title">15. Better Call Saul</h4>
+                                <p class="season">Season 5</p>
+                                <p class="card-text">
+                                    The trials and tribulations of criminal lawyer Jimmy McGill in the time before he established his strip-mall law office in Albuquerque, New Mexico.
+                                </p>
+                                <a class="btn btn-primary trailerBtn btn-block mt-auto" href="https://www.imdb.com/video/vi4166106905?playlistId=tt3032476&ref_=tt_ov_vi">Watch Trailer</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-6" style="float:left">
+                        <div class="card mb-2 top-20-card">
+                            <img class="card-img-top"
+                                 src="/css/Images/TheFlightAttendant.jpg" alt="The Flight Attendant Poster">
+                            <div class="card-body d-flex flex-column">
+                                <h4 class="card-title">16. The Flight Attendant</h4>
+                                <p class="season">Miniseries</p>
+                                <p class="card-text">
+                                    A flight attendant wakes up in the wrong hotel, in the wrong bed, with a dead man - and no idea what happened. 
+                                    When questioned by FBI agents and still unable to piece the night together, she begins to wonder if she could be the killer.
+                                </p>
+                                <a class="btn btn-primary trailerBtn btn-block mt-auto" href="https://www.imdb.com/video/vi3526148377?playlistId=tt7569576&ref_=tt_ov_vi">Watch Trailer</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!--/.Fourth slide-->
+                <!--Fifth slide-->
+                <div class="carousel-item">
+
+                    <div class="col-lg-3 col-md-6 col-sm-6" style="float:left">
+                        <div class="card mb-2 top-20-card">
+                            <img class="card-img-top"
+                                 src="/css/Images/TheBoys.jpg" alt="The Boys Poster">
+                            <div class="card-body d-flex flex-column">
+                                <h4 class="card-title">17. The Boys</h4>
+                                <p class="season">Season 2</p>
+                                <p class="card-text">
+                                    A group of vigilantes set out to take down corrupt superheroes who abuse their superpowers.
+                                </p>
+                                <a class="btn btn-primary trailerBtn btn-block mt-auto" href="https://www.imdb.com/video/vi1650703897?playlistId=tt1190634&ref_=tt_ov_vi">Watch Trailer</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-6" style="float:left">
+                        <div class="card mb-2 top-20-card">
+                            <img class="card-img-top"
+                                 src="/css/Images/TheCrown.jpg" alt="The Crown Poster">
+                            <div class="card-body d-flex flex-column">
+                                <h4 class="card-title">18. The Crown</h4>
+                                <p class="season">Season 4</p>
+                                <p class="card-text">
+                                    Follows the political rivalries and romance of Queen Elizabeth II's reign and the events that shaped the second half of the twentieth century.
+                                </p>
+                                <a class="btn btn-primary trailerBtn btn-block mt-auto" href="https://www.imdb.com/video/vi1374667033?playlistId=tt4786824&ref_=tt_ov_vi">Watch Trailer</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-6" style="float:left">
+                        <div class="card mb-2 top-20-card">
+                            <img class="card-img-top"
+                                 src="/css/Images/IMayDestroyYou.jpg" alt="I May Destroy You Poster">
+                            <div class="card-body d-flex flex-column">
+                                <h4 class="card-title">19. I May Destroy You</h4>
+                                <p class="season">Season 1</p>
+                                <p class="card-text">
+                                    The question of sexual consent in contemporary life and how, in the new landscape
+                                    of dating and relationships, we make the distinction between liberation and exploitation.
+                                </p>
+                                <a class="btn btn-primary trailerBtn btn-block mt-auto " href="https://www.imdb.com/video/vi2530065945?playlistId=tt11204260&ref_=tt_ov_vi">Watch Trailer</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-sm-6" style="float:left">
+                        <div class="card mb-2 top-20-card">
+                            <img class="card-img-top"
+                                 src="/css/Images/SexEducation.jpg" alt="Sex Education Poster">
+                            <div class="card-body d-flex flex-column">
+                                <h4 class="card-title">20. Sex Education</h4>
+                                <p class="season">Season 2</p>
+                                <p class="card-text">
+                                    A teenage boy with a sex therapist mother teams up with a high school classmate to set up an underground sex therapy clinic at school.
+                                </p>
+                                <a class="btn btn-primary btn-block mt-auto" href="https://www.imdb.com/video/vi2524954393?playlistId=tt7767422&ref_=tt_ov_vi">Watch Trailer</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!--/.Fifth slide-->
+
+            </div>
+            <!--/.Slides-->
+        </div>
+        <!--/.Carousel Wrapper-->
+    </div>
+</section>
+
+<section id="NetflixList" class="section-margin">
+    <h3 class="carousel-heading">Top 10 Netflix Shows of 2020</h3>
+    <!--Carousel Wrapper-->
+    <div id="NetflixTop10" class="carousel slide carousel-multi-item" data-interval="false" data-ride="carousel('hover')">
+
+        <!--Controls-->
+        <a class="carousel-control-prev" href="#NetflixTop10" role="button" data-slide="prev" style="left: -170px;">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#NetflixTop10" role="button" data-slide="next" style="right: -170px;">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+        <!--/.Controls-->
+        <!--Slides-->
+        <div class="carousel-parent">
+            <div class="carousel-inner" role="listbox">
+
+                <!--First slide-->
+                <div class="carousel-item active">
+                    <!--Top Row-->
+                    <div class="row">
+                        <div class="card mb-3 horizontal-cards-2" style="max-width: 540px; max-height: 265px">
+                            <div class="row no-gutters">
+                                <div class="col-md-4">
+                                    <img src="/css/Images/Selena.jpg" class="card-img" alt="Selena: The Series Poster">
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card-body d-flex flex-column horizontal-body-2">
+                                        <h5 class="card-title">1. Selena: The Series</h5>
+                                        <p class="card-text">
+                                            Late Tejano singer Selena as her dreams come true, and her family makes life-changing choices on the singer's journey to success.
+                                        </p>
+                                        <a class="btn btn-primary btn-block mt-auto trailerBtn" href="https://www.imdb.com/video/vi434880793?playlistId=tt9421868&ref_=tt_ov_vi">Watch Trailer</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card mb-3 horizontal-cards-2" style="max-width: 540px; max-height: 265px">
+                            <div class="row no-gutters">
+                                <div class="col-md-4">
+                                    <img src="/css/Images/BigMouth.jpg" class="card-img" alt="Big Mouth Poster">
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card-body d-flex flex-column horizontal-body-2">
+                                        <h5 class="card-title">2. Big Mouth</h5>
+                                        <p class="card-text">
+                                            Teenage friends find their lives upended by the wonders and horrors of puberty.
+                                        </p>
+                                        <a class="btn btn-primary btn-block mt-auto trailerBtn" href="https://www.imdb.com/video/vi74824217?playlistId=tt6524350&ref_=tt_ov_vi">Watch Trailer</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Bottom Row-->
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card mb-3" style="max-width: 540px;">
+                                <div class="row no-gutters horizontal-cards-3">
+                                    <div class="three-card-img">
+                                        <img src="/css/Images/Manhunt.jpg" alt="Manhunt Poster">
+                                    </div>
+                                    <div class="card-height">
+                                        <div class="card-body d-flex flex-column horizontal-body-3">
+                                            <h5 class="card-title">3. Manhunt</h5>
+                                            <p class="card-text vertical-card-text">
+                                                An in-depth look at how an FBI profiler helped track down the terrorist Ted Kaczynski, the Unabomber.
+                                            </p>
+                                            <a class="btn btn-primary btn-block mt-auto trailerBtn" href="https://www.imdb.com/video/vi2297083929?playlistId=tt5618256&ref_=tt_ov_vi">Watch Trailer</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card mb-3" style="max-width: 540px;">
+                                <div class="row no-gutters horizontal-cards-3">
+                                    <div class="three-card-img">
+                                        <img src="/css/Images/VirginRiver.jpg" alt="Virgin River Poster">
+                                    </div>
+                                    <div class="card-height">
+                                        <div class="card-body d-flex flex-column horizontal-body-3">
+                                            <h5 class="card-title">4. Virgin River</h5>
+                                            <p class="card-text vertical-card-text">
+                                                After seeing an ad for a midwife, a recently widowed big-city nurse moves to the redwood forests 
+                                                of northern California, where she meets an intriguing man.
+                                            </p>
+                                            <a class="btn btn-primary trailerBtn btn-block mt-auto" href="https://www.imdb.com/video/vi3016802585?playlistId=tt9077530&ref_=tt_ov_vi">Watch Trailer</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card mb-3" style="max-width: 540px;">
+                                <div class="row no-gutters horizontal-cards-3">
+                                    <div class="three-card-img">
+                                        <img src="/css/Images/TheQueensGambit.jpg" alt="The Queen's Gambit Poster">
+                                    </div>
+                                    <div class="card-height">
+                                        <div class="card-body d-flex flex-column horizontal-body-3">
+                                            <h5 class="card-title">5. The Queen's Gambit</h5>
+                                            <p class="card-text vertical-card-text">
+                                                Orphaned at the tender age of nine, prodigious introvert Beth Harmon discovers and 
+                                                masters the game of chess in 1960s USA. But child stardom comes at a price.
+                                            </p>
+                                            <a class="btn btn-primary trailerBtn btn-block mt-auto" href="https://www.imdb.com/video/vi1185857817?playlistId=tt10048342&ref_=tt_ov_vi">Watch Trailer</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--/.First slide-->
+                <!--Second slide-->
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="card mb-3 horizontal-cards-2" style="max-width: 540px; max-height: 265px">
+                            <div class="row no-gutters">
+                                <div class="col-md-4">
+                                    <img src="/css/Images/Cocomelon.jpg" alt="Cocomelon Poster">
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card-body d-flex flex-column horizontal-body-2">
+                                        <h5 class="card-title">6. Cocomelon</h5>
+                                        <p class="card-text">
+                                            In the town of Cocomelon, baby JJ and his siblings go on fun every-day adventures with nursery, play, 
+                                            exploration, and learning - situations that any preschooler could relate to. Fun, relatable stories set to toe-tapping songs.
+                                        </p>
+                                        <a class="btn btn-primary trailerBtn btn-block mt-auto" href="https://www.imdb.com/video/vi66437401?playlistId=tt12427840&ref_=tt_ov_vi">Watch Trailer</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card mb-3 horizontal-cards-2" style="max-width: 540px; max-height: 265px">
+                            <div class="row no-gutters">
+                                <div class="col-md-4">
+                                    <img src="/css/Images/TheCrown.jpg" alt="The Crown Poster">
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card-body d-flex flex-column horizontal-body-2">
+                                        <h5 class="card-title">7. The Crown</h5>
+                                        <p class="card-text">
+                                            Follows the political rivalries and romance of Queen Elizabeth II's reign and the events that shaped the second half of the twentieth century.
+                                        </p>
+                                        <a class="btn btn-primary trailerBtn btn-block mt-auto" href="https://www.imdb.com/video/vi1374667033?playlistId=tt4786824&ref_=tt_ov_vi">Watch Trailer</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!--Bottom Row-->
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card mb-3" style="max-width: 540px;">
+                                <div class="row no-gutters horizontal-cards-3">
+                                    <div class="three-card-img">
+                                        <img src="/css/Images/MrIglesias.jpg" alt="Mr. Iglesias Poster">
+                                    </div>
+                                    <div class="card-height">
+                                        <div class="card-body d-flex flex-column horizontal-body-3">
+                                            <h5 class="card-title">8. Mr. Iglesias</h5>
+                                            <p class="card-text vertical-card-text">
+                                                A good-natured high school teacher working at his alma mater works with gifted but misfit and disinterested students.
+                                            </p>
+                                            <a class="btn btn-primary trailerBtn btn-block mt-auto" href="https://www.imdb.com/video/vi314686489?playlistId=tt8403536&ref_=tt_ov_vi">Watch Trailer</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card mb-3" style="max-width: 540px;">
+                                <div class="row no-gutters horizontal-cards-3">
+                                    <div class="three-card-img">
+                                        <img src="/css/Images/TheOffice.jpg" alt="The Office Poster">
+                                    </div>
+                                    <div class="card-height">
+                                        <div class="card-body d-flex flex-column horizontal-body-3">
+                                            <h5 class="card-title">9. The Office</h5>
+                                            <p class="card-text vertical-card-text">
+                                                A mockumentary on a group of typical office workers, where the workday consists of ego clashes, inappropriate behavior, and tedium.
+                                            </p>
+                                            <a class="btn btn-primary trailerBtn btn-block mt-auto" href="https://www.imdb.com/video/vi2686888217?playlistId=tt0386676&ref_=tt_ov_vi">Watch Trailer</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card mb-3" style="max-width: 540px;">
+                                <div class="row no-gutters horizontal-cards-3">
+                                    <div class="three-card-img">
+                                        <img src="/css/Images/AudreyEarnshaw.jpg" alt="The Curse of Audrey Earnshaw Poster">
+                                    </div>
+                                    <div class="card-height">
+                                        <div class="card-body d-flex flex-column horizontal-body-3">
+                                            <h5 class="card-title">10. The Curse of Audrey Earnshaw</h5>
+                                            <p class="card-text vertical-card-text">
+                                                A devout community suffering from a plague is torn apart by a beautiful young woman and the forces of witchcraft, black magic, and possession.
+                                            </p>
+                                            <a class="btn btn-primary trailerBtn btn-block mt-auto" href="https://www.imdb.com/video/vi2686888217?playlistId=tt0386676&ref_=tt_ov_vi">Watch Trailer</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--/.Second slide-->
+            </div>
+            <!--/.Slides-->
+        </div>
+        <!--/.Carousel Wrapper-->
+    </div>
+</section>
+
+<section id="HuluList" class="section-margin">
+    <h3 class="carousel-heading">Top 10 Hulu Shows of 2020</h3>
+    <!--Carousel Wrapper-->
+    <div id="ComedyTop10" class="carousel slide carousel-multi-item" data-interval="false" data-ride="carousel('hover')">
+
+        <!--Controls-->
+        <a class="carousel-control-prev" href="#ComedyTop10" role="button" data-slide="prev" style="left: -170px;">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#ComedyTop10" role="button" data-slide="next" style="right: -170px;">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+        <!--/.Controls-->
+        <!--Slides-->
+        <div class="carousel-parent">
+            <div class="carousel-inner" role="listbox">
+
+                <!--First slide-->
+                <div class="carousel-item active">
+                    <!--Top Row-->
+                    <div class="row">
+                        <div class="card mb-3 horizontal-cards-2" style="max-width: 540px; max-height: 265px">
+                            <div class="row no-gutters">
+                                <div class="col-md-4">
+                                    <img src="/css/Images/Justified.jpg" class="card-img" alt="Justified Poster">
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card-body d-flex flex-column horizontal-body-2">
+                                        <h5 class="card-title">1. Justified</h5>
+                                        <p class="card-text">
+                                            U.S. Marshal Raylan Givens is reassigned from Miami to his childhood home in the poor, rural coal mining towns of eastern Kentucky.
+                                        </p>
+                                        <a class="btn btn-primary btn-block mt-auto trailerBtn" href="https://www.imdb.com/video/vi963026457?playlistId=tt1489428&ref_=tt_ov_vi">Watch Trailer</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card mb-3 horizontal-cards-2" style="max-width: 540px; max-height: 265px">
+                            <div class="row no-gutters">
+                                <div class="col-md-4">
+                                    <img src="/css/Images/Atlanta.jpg" class="card-img" alt="Atlanta Poster">
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card-body d-flex flex-column horizontal-body-2">
+                                        <h5 class="card-title">2. Atlanta</h5>
+                                        <p class="card-text">
+                                            Based in Atlanta, Earn and his cousin Alfred try to make their way in the world through the rap scene. Along the way they come face 
+                                            to face with social and economic issues touching on race, relationships, poverty, status, and parenthood.
+                                        </p>
+                                        <a class="btn btn-primary btn-block mt-auto trailerBtn" href="https://www.imdb.com/video/vi3770988569?playlistId=tt4288182&ref_=tt_ov_vi">Watch Trailer</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Bottom Row-->
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card mb-3" style="max-width: 540px;">
+                                <div class="row no-gutters comedy-horizontal-cards-3">
+                                    <div class="three-card-img">
+                                        <img src="/css/Images/BetterThings.jpg" alt="Better Things Poster">
+                                    </div>
+                                    <div class="card-height">
+                                        <div class="card-body d-flex flex-column horizontal-body-3">
+                                            <h5 class="card-title">3. Better Things</h5>
+                                            <p class="card-text vertical-card-text">
+                                                An actress raises her three daughters while juggling the pressures of working in Hollywood and being a single parent.
+                                            </p>
+                                            <a class="btn btn-primary btn-block mt-auto trailerBtn" href="https://www.imdb.com/video/vi2994061081?playlistId=tt4370596&ref_=tt_ov_vi">Watch Trailer</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card mb-3" style="max-width: 540px;">
+                                <div class="row no-gutters comedy-horizontal-cards-3">
+                                    <div class="three-card-img">
+                                        <img src="/css/Images/WhatWeDoInTheShadows.jpg" alt="What We Do in the Shadows Poster">
+                                    </div>
+                                    <div class="card-height">
+                                        <div class="card-body d-flex flex-column horizontal-body-3">
+                                            <h5 class="card-title">4. What We Do in the Shadows</h5>
+                                            <p class="card-text vertical-card-text">
+                                                A look into the daily (or rather, nightly) lives of three vampires, who've lived together for over 100 years, on Staten Island.
+                                            </p>
+                                            <a class="btn btn-primary btn-block mt-auto trailerBtn" href="https://www.imdb.com/video/vi3027810841?playlistId=tt7908628&ref_=tt_ov_vi">Watch Trailer</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card mb-3" style="max-width: 540px;">
+                                <div class="row no-gutters comedy-horizontal-cards-3">
+                                    <div class="three-card-img">
+                                        <img src="/css/Images/PEN15.jpg" alt="PEN15 Poster">
+                                    </div>
+                                    <div class="card-height">
+                                        <div class="card-body d-flex flex-column horizontal-body-3">
+                                            <h5 class="card-title">5. PEN15</h5>
+                                            <p class="card-text vertical-card-text">
+                                                The comedic story of middle school seen through the eyes of two 7th grade girls dealing with the awkwardness of being a teenager.
+                                            </p>
+                                            <a class="btn btn-primary trailerBtn btn-block mt-auto" href="imdb.com/video/vi3866017305?playlistId=tt8324422&ref_=tt_ov_vi">Watch Trailer</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--/.First slide-->
+                <!--Second slide-->
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="card mb-3 horizontal-cards-2" style="max-width: 540px; max-height: 265px">
+                            <div class="row no-gutters">
+                                <div class="col-md-4">
+                                    <img src="/css/Images/Harlots.jpg" alt="Harlots Poster">
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card-body d-flex flex-column horizontal-body-2">
+                                        <h5 class="card-title">6. Harlots</h5>
+                                        <p class="card-text">
+                                            Brothel owner Margaret Wells struggles to raise her daughters in London during the 18th century.
+                                        </p>
+                                        <a class="btn btn-primary trailerBtn btn-block mt-auto" href="https://www.imdb.com/video/vi2397420313?playlistId=tt5761478&ref_=tt_ov_vi">Watch Trailer</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card mb-3 horizontal-cards-2" style="max-width: 540px; max-height: 265px">
+                            <div class="row no-gutters">
+                                <div class="col-md-4">
+                                    <img src="/css/Images/Ramy.jpg" alt="Ramy Poster">
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card-body d-flex flex-column horizontal-body-2">
+                                        <h5 class="card-title">7. Ramy</h5>
+                                        <p class="card-text">
+                                            In New Jersey, Ramy, son of Egyptian migrants, begins a spiritual journey, 
+                                            divided between his Muslim community, God, and his friends who see endless possibilities.
+                                        </p>
+                                        <a class="btn btn-primary trailerBtn btn-block mt-auto" href="https://www.imdb.com/video/vi1539751449?playlistId=tt7649694&ref_=tt_ov_vi">Watch Trailer</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Bottom Row-->
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card mb-3" style="max-width: 540px;">
+                                <div class="row no-gutters comedy-horizontal-cards-3">
+                                    <div class="three-card-img">
+                                        <img src="/css/Images/MrsAmerica.jpg" alt="Mrs. America Poster">
+                                    </div>
+                                    <div class="card-height">
+                                        <div class="card-body d-flex flex-column horizontal-body-3">
+                                            <h5 class="card-title">8. Mrs. America</h5>
+                                            <p class="card-text vertical-card-text">
+                                                Conservative activist Phyllis Schlafly leads an unexpected fight against the Equal Rights Amendment movement during the 1970s.
+                                            </p>
+                                            <a class="btn btn-primary trailerBtn btn-block mt-auto" href="https://www.imdb.com/video/vi3044392729?playlistId=tt9244556&ref_=tt_ov_vi">Watch Trailer</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card mb-3" style="max-width: 540px;">
+                                <div class="row no-gutters comedy-horizontal-cards-3">
+                                    <div class="three-card-img">
+                                        <img src="/css/Images/DifficultPeople.jpg" alt="Difficult People Poster">
+                                    </div>
+                                    <div class="card-height">
+                                        <div class="card-body d-flex flex-column horizontal-body-3">
+                                            <h5 class="card-title">9. Difficult People</h5>
+                                            <p class="card-text vertical-card-text">
+                                                Julie and Billy, two jaded aspiring comedians who live together in New York City, navigate through their 
+                                                thirties while dealing with their individual careers and personal relationships.
+                                            </p>
+                                            <a class="btn btn-primary trailerBtn btn-block mt-auto" href="https://www.imdb.com/video/vi3184310553?playlistId=tt4676574&ref_=tt_ov_vi">Watch Trailer</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card mb-3" style="max-width: 540px;">
+                                <div class="row no-gutters comedy-horizontal-cards-3">
+                                    <div class="three-card-img">
+                                        <img src="/css/Images/YoureTheWorst.jpg" alt="You're the Worst Poster">
+                                    </div>
+                                    <div class="card-height">
+                                        <div class="card-body d-flex flex-column horizontal-body-3">
+                                            <h5 class="card-title">10. You're the Worst</h5>
+                                            <p class="card-text vertical-card-text">
+                                                Centers on two toxic, self-destructive people who fall in love and attempt a relationship.
+                                            </p>
+                                            <a class="btn btn-primary trailerBtn btn-block mt-auto" href="https://www.imdb.com/video/vi676050713?playlistId=tt3228420&ref_=tt_ov_vi">Watch Trailer</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--/.Second slide-->
+            </div>
+            <!--/.Slides-->
+        </div>
+        <!--/.Carousel Wrapper-->
+    </div>
+</section>
+
+<section id="TVComedyList" class="section-margin">
+    <h3 class="carousel-heading">Top 10 TV Comedy Shows of 2020</h3>
+    <!--Carousel Wrapper-->
+    <div id="TVComedyTop10" class="carousel slide carousel-multi-item" data-interval="false" data-ride="carousel('hover')">
+
+        <!--Controls-->
+        <a class="carousel-control-prev" href="#TVComedyTop10" role="button" data-slide="prev" style="left: -170px;">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#TVComedyTop10" role="button" data-slide="next" style="right: -170px;">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+        <!--/.Controls-->
+        <!--Slides-->
+        <div class="carousel-parent">
+            <div class="carousel-inner" role="listbox">
+
+                <!--First slide-->
+                <div class="carousel-item active">
+                    <!--Top Row-->
+                    <div class="row">
+                        <div class="card mb-3 horizontal-cards-2" style="max-width: 540px; max-height: 265px">
+                            <div class="row no-gutters">
+                                <div class="col-md-4">
+                                    <img src="/css/Images/TedLasso.jpg" class="card-img" alt="Ted Lasso Poster">
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card-body d-flex flex-column horizontal-body-2">
+                                        <h5 class="card-title">1. Ted Lasso</h5>
+                                        <p class="card-text">
+                                            Follows US American Football coach Ted Lasso heading to the UK to manage a struggling London football team in the top flight of English football.
+                                        </p>
+                                        <a class="btn btn-primary btn-block mt-auto trailerBtn" href="https://www.imdb.com/video/vi2973745433?ref_=tt_pv_vi_aiv_1">Watch Trailer</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card mb-3 horizontal-cards-2" style="max-width: 540px; max-height: 265px">
+                            <div class="row no-gutters">
+                                <div class="col-md-4">
+                                    <img src="/css/Images/Upload.jpg" class="card-img" alt="Upload Poster">
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card-body d-flex flex-column horizontal-body-2">
+                                        <h5 class="card-title">2. Upload</h5>
+                                        <p class="card-text">
+                                            A man is able to choose his own afterlife after his untimely death by having his consciousness uploaded into a virtual world. 
+                                            As he gets used to his new life and befriends his angel (real world handler) questions about his death arise.
+                                        </p>
+                                        <a class="btn btn-primary btn-block mt-auto trailerBtn" href="https://www.imdb.com/video/vi1503772185?playlistId=tt7826376&ref_=tt_ov_vi">Watch Trailer</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Bottom Row-->
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card mb-3" style="max-width: 540px;">
+                                <div class="row no-gutters comedy-horizontal-cards-3">
+                                    <div class="three-card-img">
+                                        <img src="/css/Images/Dave.jpg" alt="Dave">
+                                    </div>
+                                    <div class="card-height">
+                                        <div class="card-body d-flex flex-column horizontal-body-3">
+                                            <h5 class="card-title">3. Dave</h5>
+                                            <p class="card-text vertical-card-text">
+                                                A neurotic mid 20's suburbanite's convinced he's destined to be one of the greatest rappers of all time. Now he's got to prove it to everyone else.
+                                            </p>
+                                            <a class="btn btn-primary btn-block mt-auto trailerBtn" href="https://www.imdb.com/video/vi2396306969?playlistId=tt8531222&ref_=tt_ov_vi">Watch Trailer</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card mb-3" style="max-width: 540px;">
+                                <div class="row no-gutters comedy-horizontal-cards-3">
+                                    <div class="three-card-img">
+                                        <img src="/css/Images/MythicQuest.jpg" alt="Mythic Quest: Raven's Banquet Poster">
+                                    </div>
+                                    <div class="card-height">
+                                        <div class="card-body d-flex flex-column horizontal-body-3">
+                                            <h5 class="card-title">4. Mythic Quest: Raven's Banquet</h5>
+                                            <p class="card-text vertical-card-text">
+                                                The owner of a successful video game design company and his troubled staff struggle to keep their hit game 'Mythic Quest' on top.
+                                            </p>
+                                            <a class="btn btn-primary btn-block mt-auto trailerBtn" href="https://www.imdb.com/video/vi3916021529?ref_=tt_pv_vi_aiv_1">Watch Trailer</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card mb-3" style="max-width: 540px;">
+                                <div class="row no-gutters comedy-horizontal-cards-3">
+                                    <div class="three-card-img">
+                                        <img src="/css/Images/ZoeysExtraordinaryPlaylist.jpg" alt="Zoey's Extraordinary Playlist Poster">
+                                    </div>
+                                    <div class="card-height">
+                                        <div class="card-body d-flex flex-column horizontal-body-3">
+                                            <h5 class="card-title">5. Zoey's Extraordinary Playlist</h5>
+                                            <p class="card-text vertical-card-text">
+
+                                                A young woman discovers she has the ability to hear the innermost thoughts of people around her as songs and musical numbers.
+                                            </p>
+                                            <a class="btn btn-primary trailerBtn btn-block mt-auto" href="https://www.imdb.com/video/vi3380133657?ref_=tt_pv_vi_aiv_1">Watch Trailer</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--/.First slide-->
+                <!--Second slide-->
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="card mb-3 horizontal-cards-2" style="max-width: 540px; max-height: 265px">
+                            <div class="row no-gutters">
+                                <div class="col-md-4">
+                                    <img src="/css/Images/SpaceForce.jpg" alt="Space Force Poster">
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card-body d-flex flex-column horizontal-body-2">
+                                        <h5 class="card-title">6. Space Force</h5>
+                                        <p class="card-text">
+                                            The people tasked with creating a sixth branch of the armed services: The Space Force.
+                                        </p>
+                                        <a class="btn btn-primary trailerBtn btn-block mt-auto" href="https://www.imdb.com/video/vi1875164697?playlistId=tt9612516&ref_=tt_ov_vi">Watch Trailer</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card mb-3 horizontal-cards-2" style="max-width: 540px; max-height: 265px">
+                            <div class="row no-gutters">
+                                <div class="col-md-4">
+                                    <img src="/css/Images/YearOfTheRabbit.jpg" alt="Year of the Rabbit Poster">
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card-body d-flex flex-column horizontal-body-2">
+                                        <h5 class="card-title">7. Year of the Rabbit</h5>
+                                        <p class="card-text">
+                                            Detective Inspector Rabbit, a dedicated, tough, thick and oft inebriated Victorian copper, sleuths his way across London with his two 
+                                            young partners, a doofy rookie, and a brilliant black policewoman no one ever believes.
+                                        </p>
+                                        <a class="btn btn-primary trailerBtn btn-block mt-auto" href="https://www.imdb.com/video/vi2536291353?playlistId=tt8530456&ref_=tt_ov_vi">Watch Trailer</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Bottom Row-->
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card mb-3" style="max-width: 540px;">
+                                <div class="row no-gutters comedy-horizontal-cards-3">
+                                    <div class="three-card-img">
+                                        <img src="/css/Images/Avenue5.jpg" alt="Avenue 5 Poster">
+                                    </div>
+                                    <div class="card-height">
+                                        <div class="card-body d-flex flex-column horizontal-body-3">
+                                            <h5 class="card-title">8. Avenue 5</h5>
+                                            <p class="card-text vertical-card-text">
+                                                The troubled crew of Avenue 5, a space cruise ship filled with spoiled, rich, snotty space tourists, must 
+                                                try and keep everyone calm after their ship gets thrown off course into space and ends up needing three years to return to Earth.
+                                            </p>
+                                            <a class="btn btn-primary trailerBtn btn-block mt-auto" href="https://www.imdb.com/video/vi2244394777?playlistId=tt10234362&ref_=tt_ov_vi">Watch Trailer</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card mb-3" style="max-width: 540px;">
+                                <div class="row no-gutters comedy-horizontal-cards-3">
+                                    <div class="three-card-img">
+                                        <img src="/css/Images/Awkwafina.jpg" alt="Awkwafina Is Nora from Queens Poster">
+                                    </div>
+                                    <div class="card-height">
+                                        <div class="card-body d-flex flex-column horizontal-body-3">
+                                            <h5 class="card-title">9. Awkwafina Is Nora from Queens</h5>
+                                            <p class="card-text vertical-card-text">
+                                                With help from her dad and grandmother, Nora Lum navigates young adulthood in Flushing, New York with her cousin.
+                                            </p>
+                                            <a class="btn btn-primary trailerBtn btn-block mt-auto" href="https://www.imdb.com/video/vi1934278425?playlistId=tt8494614&ref_=tt_ov_vi">Watch Trailer</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card mb-3" style="max-width: 540px;">
+                                <div class="row no-gutters comedy-horizontal-cards-3">
+                                    <div class="three-card-img">
+                                        <img src="/css/Images/Breeders.jpg" alt="Breeders Poster">
+                                    </div>
+                                    <div class="card-height">
+                                        <div class="card-body d-flex flex-column horizontal-body-3">
+                                            <h5 class="card-title">10. Breeders</h5>
+                                            <p class="card-text vertical-card-text">
+                                                A comedic look at the trials and tribulations of parenthood.
+                                            </p>
+                                            <a class="btn btn-primary trailerBtn btn-block mt-auto" href="https://www.imdb.com/video/vi3077947161?playlistId=tt8129450&ref_=tt_ov_vi">Watch Trailer</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--/.Second slide-->
+            </div>
+            <!--/.Slides-->
+        </div>
+        <!--/.Carousel Wrapper-->
+    </div>
+</section>

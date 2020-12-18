@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30717.126
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProjectTesting", "ProjectTesting\ProjectTesting.csproj", "{4FA20340-0D52-4EE6-87D5-CBEAC596048A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Moive-TV-Database", "ProjectTesting\Moive-TV-Database.csproj", "{4FA20340-0D52-4EE6-87D5-CBEAC596048A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

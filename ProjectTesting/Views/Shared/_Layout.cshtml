@@ -17,18 +17,37 @@
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">ProjectTesting</a>
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Movie and TV Database</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
                     <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
+                        @*<li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Movies</a>
+                        </li>*@
+                        <li class="nav-item dropdown">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Movies
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="Index" asp-fragment="boxOfficeList">2020 Box Office Hits</a>
+                                <a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="Index" asp-fragment="HorrorList">2020 Horror Hits</a>
+                                <a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="Index" asp-fragment="ComedyList">2020 Comedy Hits</a>
+                                <a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="Index" asp-fragment="DramaList">2020 Drama Hits</a>
+                            </div>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">TV Shows</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                TV Shows
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="Privacy" asp-fragment="TopShows2020">Top Shows of 2020</a>
+                                <a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="Privacy" asp-fragment="NetflixList">2020 Netflix Series</a>
+                                <a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="Privacy" asp-fragment="HuluList">2020 Hulu Series</a>
+                                <a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="Privacy" asp-fragment="TVComedyList">2020 TV Comedies</a>
+                            </div>
                         </li>
                         <li class="nav-item search-bar">
                             @using (Html.BeginForm("Search", "Home", FormMethod.Get))
